@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Attendance System</h1>
+    </header>
+    <div class="container">
+        <p><b>Notification:</b> Attendance marking is open for students in the classroom!</p>
+        <button onclick="markAttendance()">Mark Attendance</button>
+        <p id="status"></p>
+    </div>
+
+    <script>
+        function markAttendance() {
+            // Simulate GPS/WiFi location check (replace with real location verification logic)
+            const isInClassroom = true; // This should be dynamically verified
+            if (isInClassroom) {
+                document.getElementById("status").innerText = "Attendance marked successfully!";
+            } else {
+                document.getElementById("status").innerText = "You are not in the classroom!";
+            }
+        }
+    </script>
+    <script src="attendence.js"></script>
+    <script src="node.js"></script>
+</body>
+</html>a
